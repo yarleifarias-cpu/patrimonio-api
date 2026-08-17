@@ -12,6 +12,7 @@ public class PatrimonioApplication {
 		SpringApplication.run(PatrimonioApplication.class, args);
 		Empresa empresa = new Empresa();
 		empresa.setRazaosocial("Senai LTDA");
+
 		System.out.println(empresa.getRazaosocial());
 
 		Endereco endereco = new Endereco();
