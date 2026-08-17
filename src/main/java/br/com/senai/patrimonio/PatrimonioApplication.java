@@ -1,6 +1,7 @@
 package br.com.senai.patrimonio;
 
-import br.com.senai.patrimonio.model.Empresa;
+import br.com.senai.patrimonio.service.model.Empresa;
+import br.com.senai.patrimonio.service.model.Endereco;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,6 +13,12 @@ public class PatrimonioApplication {
 		Empresa empresa = new Empresa();
 		empresa.setRazaosocial("Senai LTDA");
 		System.out.println(empresa.getRazaosocial());
+
+		Endereco endereco = new Endereco();
+		endereco.setRua("Manual Gulart");
+		System.out.println(endereco.getRua());
+
+
 	}
 
 

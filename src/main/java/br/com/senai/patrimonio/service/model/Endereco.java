@@ -1,6 +1,7 @@
-package br.com.senai.patrimonio.model;
+package br.com.senai.patrimonio.service.model;
 
 public class Endereco {
+
     private String rua;
     private String numero;
     private String conplemento;
@@ -9,10 +10,22 @@ public class Endereco {
     private String estado;
 
     public Endereco(){}
-        public String getRua() {
-            return rua;
+
+    public Endereco(String rua, String numero, String conplemento, String bairro, String cidade, String estado) {
+        this.rua = rua;
+        this.numero = numero;
+        this.conplemento = conplemento;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.estado = estado;
     }
 
+    public String getRua() {
+            return rua;
+    }
+    public void setRua(String rua){
+        this.rua = rua;
+    }
     public String getNumero() {
         return numero;
     }
@@ -51,10 +64,6 @@ public class Endereco {
 
     public void setEstado(String estado) {
         this.estado = estado;
-    }
-
-    public void setRua(String rua){
-        this.rua = rua;
     }
 
 }

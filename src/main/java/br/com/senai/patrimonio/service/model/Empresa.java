@@ -1,4 +1,4 @@
-package br.com.senai.patrimonio.model;
+package br.com.senai.patrimonio.service.model;
 
 public class Empresa {
     private Long id;
