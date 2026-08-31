@@ -1,4 +1,4 @@
-package br.com.senai.patrimonio.service.model;
+package br.com.senai.patrimonio.model;
 
 import jakarta.persistence.Embedded;
 

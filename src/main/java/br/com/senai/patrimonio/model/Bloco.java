@@ -1,6 +1,4 @@
-package br.com.senai.patrimonio.service.model;
-
-import jakarta.persistence.Embedded;
+package br.com.senai.patrimonio.model;
 
 public class Bloco {
     private Long id;

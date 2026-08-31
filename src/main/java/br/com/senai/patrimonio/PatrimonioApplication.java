@@ -1,7 +1,10 @@
 package br.com.senai.patrimonio;
 
-import br.com.senai.patrimonio.service.model.Empresa;
-import br.com.senai.patrimonio.service.model.Endereco;
+import br.com.senai.patrimonio.model.Empresa;
+import br.com.senai.patrimonio.model.Endereco;
+import br.com.senai.patrimonio.model.Fucionario;
+import br.com.senai.patrimonio.model.Sala;
+import br.com.senai.patrimonio.model.enums.Cargo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -27,7 +30,14 @@ public class PatrimonioApplication {
 				"489", "Perto do posto de saúde",
 				"Santa luzia","Criciúma", "SC");
 		System.out.println(enderecoComArgumentos.getBairro());
+Sala sala = new Sala();
 
+		Fucionario fucionario = new Fucionario(
+				35L,"João", "123456789",
+				Cargo.GERENTE, empresa, sala
+		);
+
+		System.out.println(fucionario.getCpf());
 	}
 
 

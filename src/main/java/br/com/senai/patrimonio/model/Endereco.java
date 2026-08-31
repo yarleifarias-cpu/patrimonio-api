@@ -1,4 +1,4 @@
-package br.com.senai.patrimonio.service.model;
+package br.com.senai.patrimonio.model;
 
 /**
  * CONCEITO DE POO: ENCAPSULAMENTO + ABSTRACAO
