@@ -3,14 +3,14 @@ package br.com.senai.patrimonio.avaliacao;
 public class Pessoa {
     private String nome;
     private String email;
-    private String telefonr;
+    private String telefone;
 
     public Pessoa() {}
 
-    public Pessoa(String nome, String telefonr, String email) {
+    public Pessoa(String nome, String email, String telefone ) {
         this.nome = nome;
-        this.telefonr = telefonr;
         this.email = email;
+        this.telefone = telefone;
     }
 
     public String getNome() {
@@ -29,11 +29,11 @@ public class Pessoa {
         this.email = email;
     }
 
-    public String getTelefonr() {
-        return telefonr;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setTelefonr(String telefonr) {
-        this.telefonr = telefonr;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 }

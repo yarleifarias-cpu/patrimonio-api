@@ -4,7 +4,7 @@ import br.com.senai.patrimonio.avaliacao.Participante;
 import br.com.senai.patrimonio.avaliacao.enums.Nivel;
 import br.com.senai.patrimonio.model.Empresa;
 import br.com.senai.patrimonio.model.Endereco;
-import br.com.senai.patrimonio.model.Fucionario;
+import br.com.senai.patrimonio.model.Funcionario;
 import br.com.senai.patrimonio.model.Sala;
 import br.com.senai.patrimonio.model.enums.Cargo;
 import br.com.senai.patrimonio.model.enums.Pagamento;
@@ -36,12 +36,12 @@ public class PatrimonioApplication {
 		System.out.println(enderecoComArgumentos.getBairro());
 Sala sala = new Sala();
 
-		Fucionario fucionario = new Fucionario(
+		Funcionario funcionario = new Funcionario(
 				35L,"João", "123456789",
 				Cargo.GERENTE, empresa, sala
 		);
 
-		System.out.println(fucionario.getCpf());
+		System.out.println(funcionario.getCpf());
 		System.out.println(Pagamento.PIX);
 		System.out.println(PagamentoComposto.PIX.getDescricao());
 		System.out.println(PagamentoComposto.PIX);
@@ -51,7 +51,12 @@ Sala sala = new Sala();
 
 
 	}
-	Participante participante = new Participante("ana", "ana@gmail.com","4002-8922","P002", Nivel.INTERMEDIARIO);
+	Participante participante =
+			new Participante("Ana",
+					"ana@gamil.com",
+					"4002-8922",
+					"P1900",
+					Nivel.INICIANTE);
 
-
+	
 }

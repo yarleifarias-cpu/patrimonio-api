@@ -8,8 +8,8 @@ public class Participante extends Pessoa {
 
     public Participante(){}
 
-    public Participante(String nome, String telefonr, String email, String matricula, Nivel nivel) {
-        super(nome, telefonr, email);
+    public Participante(String nome, String email, String telefone, String matricula, Nivel nivel) {
+        super(nome, email, telefone);
         this.matricula = matricula;
         this.nivel = nivel;
     }

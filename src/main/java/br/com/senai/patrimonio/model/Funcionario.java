@@ -2,20 +2,20 @@ package br.com.senai.patrimonio.model;
 
 import br.com.senai.patrimonio.model.enums.Cargo;
 
-public class Fucionario extends Pessoa {
+public class Funcionario extends Pessoa implements Localizavel {
     private Cargo cargo;
     private Empresa empresa;
     private Sala salasResposavel;
 
-    public Fucionario(){}
+    public Funcionario(){}
 
-    public Fucionario(Cargo cargo, Empresa empresa, Sala salasResposavel) {
+    public Funcionario(Cargo cargo, Empresa empresa, Sala salasResposavel) {
         this.cargo = cargo;
         this.empresa = empresa;
         this.salasResposavel = salasResposavel;
     }
 
-    public Fucionario(Long id, String nome, String cpf, Cargo cargo, Empresa empresa, Sala salasResposavel) {
+    public Funcionario(Long id, String nome, String cpf, Cargo cargo, Empresa empresa, Sala salasResposavel) {
         super(id, nome, cpf);
         this.cargo = cargo;
         this.empresa = empresa;
@@ -44,5 +44,11 @@ public class Fucionario extends Pessoa {
 
     public void setSalasResposavel(Sala salasResposavel) {
         this.salasResposavel = salasResposavel;
+    }
+
+
+    @Override
+    public String getDescricaoLocalizavel() {
+        return "Responsabilidade de "+ getNome() + " ("+ cargo + ")";
     }
 }
