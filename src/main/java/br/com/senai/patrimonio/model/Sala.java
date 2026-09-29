@@ -61,6 +61,6 @@ public Sala(){}
     public String getDescricaoLocalizavel() {
     String nomeBloco = bloco != null ? bloco.getNome() : "Sem bloco";
 
-        return "Sala " + this.nome + "(Bloco " + nomeBloco +")";
+        return "Sala: " + this.nome + "(Bloco: " + nomeBloco +")";
     }
 }
