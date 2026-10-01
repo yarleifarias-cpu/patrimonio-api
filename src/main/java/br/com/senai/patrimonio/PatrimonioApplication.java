@@ -69,6 +69,48 @@ Sala sala = new Sala();
 
 		patrimonioInterface.setEstado(EstadoConservacao.INCERVIVEL);
 		System.out.println(patrimonioInterface.validarEstadoConservacao());
+
+		Funcionario funcionario1 = new Funcionario();
+		System.out.println(funcionario1.getEmpresaVinculada());
+Bem bem = new Bem();
+		System.out.println(bem.getEmpresaVinculada());
+
+		Empresa empresa1 = new Empresa();
+		System.out.println(bem.getEmpresaVinculada());
+
+		empresa1.setNome("Senai");
+		bem.setEmpresa(empresa1);
+		System.out.println(bem.getEmpresaVinculada());
+
+		Bloco bloco = new Bloco();
+		System.out.println(bloco.getEmpresaVinculada());
+
+		empresa1.setNome("Tesla");
+		bloco.setEmpresa(empresa1);
+		System.out.println(bloco.getEmpresaVinculada());
+
+		Funcionario funcionario2 = new Funcionario();
+		System.out.println(funcionario2.getEmpresaVinculada());
+		empresa1.setNome("Bauduco");
+		funcionario2.setEmpresa(empresa1);
+		System.out.println(funcionario2.getEmpresaVinculada());
+
+		Sala sala1 = new Sala();
+		System.out.println(sala1.getEmpresaVinculada());
+
+		empresa1.setNome("Meta");
+		sala1.setEmpresa(empresa1);
+		System.out.println(sala1.getEmpresaVinculada());
+
+		Pessoa pessoa = new Pessoa();
+
+		pessoa.setNome("João");
+		pessoa.setCpf("87654321");
+
+		funcionario2.setNome("Joao");
+		funcionario2.setCpf("12345678");
+funcionario2.setCargo(Cargo.ANALISTA);
+		System.out.println(funcionario2.getIdentificacao());
 	}
 	
 }
