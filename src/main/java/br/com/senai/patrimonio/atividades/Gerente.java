@@ -8,5 +8,8 @@ public class Gerente extends Funcionario {
 
     // TODO: Sobrescrever o método calcularBonificacao() usando @Override
     // Regra: Gerentes recebem 20% do salário base como bonificação (salarioBase * 0.20)
-
+@Override
+    public double calcularBonificacao(){
+  return this.calcularBonificacao() * 0.20;
+}
 }

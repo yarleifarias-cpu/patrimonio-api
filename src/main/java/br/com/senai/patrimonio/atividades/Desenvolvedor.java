@@ -8,5 +8,8 @@ public class Desenvolvedor extends Funcionario {
 
     // TODO: Sobrescrever o método calcularBonificacao() usando @Override
     // Regra: Desenvolvedores recebem 15% do salário base como bonificação (salarioBase * 0.15)
-
+    @Override
+    public double calcularBonificacao() {
+        return this.calcularBonificacao() * 0.15;
+    }
 }
